@@ -5,29 +5,37 @@ public class teste{
         Faça um programa para converter este tempo em anos, meses e dias, mostrando essa informação. 
         Assuma que cada mês possui sempre 30 dias. */
 
+
+        /* Lógica
+         * 1 - 
+         * 
+         */
         int valor = 400;
+
+        // Iniciando variáveis
         int anos = 0;
         int meses = 0;
-        int dias = 0;
+        int dias = valor;
 
-        int ano = 0;
-        int mes = 0;
-
-        ano = valor%365;
-        mes = valor%30;
-
-        if (ano != valor){
-            ano = valor / 365;
+    
+        if (dias >= 30){
+            for(int i=0;dias>=30;i++){
+            meses++;
+            dias=dias-30;
+            }
         }
 
-        if (mes != valor){
-            mes = valor / 30;
+        if (meses >= 12){
+            for(int i=0;meses >= 12;i++){
+                anos++;
+                meses= meses-12;
+            }
         }
-
-
-        System.out.println(ano);
-
+        System.out.println("");
+        System.out.println("Lembrando que neste exercicio, o mês é considerado com 30 dias, portanto o ano tem 360 dias.");
+        System.out.println("O Valor de dias informado foi " + valor + " dias");
         System.out.println("Sem acidentes no periodo de " + anos + " anos, " + meses + " meses, " + dias + " dias.");
+      
 
  
    }
