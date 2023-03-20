@@ -18,10 +18,10 @@ public class Usuario {
 
     public boolean novoCliente(String nome, String cpf, String setor, String email, String senha){
         nome = nome;
-        cpf=cpf;
-        setor=setor;
-        email=email;
-        senha=senha;
+        cpf = cpf;
+        setor = setor;
+        email = email;
+        senha = senha;
 
         return true;
     }
